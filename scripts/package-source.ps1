@@ -6,7 +6,7 @@ $archivePath = [IO.Path]::GetFullPath($OutputPath)
 if (Test-Path -LiteralPath $archivePath) { throw 'Archive exists; choose another path to preserve the previous package.' }
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 Add-Type -AssemblyName System.IO.Compression
-$rootFiles = @('.env.local.example','.gitignore','AGENTS.md','eslint.config.mjs','LICENSE','next.config.ts','package-lock.json','package.json','README.md','tsconfig.json')
+$rootFiles = @('.env.local.example','.gitignore','AGENTS.md','eslint.config.mjs','LICENSE','next.config.ts','package-lock.json','package.json','README.md','tsconfig.json','vercel.json')
 $sourceFiles = @($rootFiles | ForEach-Object { Get-Item -LiteralPath (Join-Path $projectRoot $_) })
 foreach ($folder in @('src','public','tests','scripts','docs')) { $sourceFiles += @(Get-ChildItem -LiteralPath (Join-Path $projectRoot $folder) -Recurse -File) }
 $archive = [System.IO.Compression.ZipFile]::Open($archivePath, [System.IO.Compression.ZipArchiveMode]::Create)

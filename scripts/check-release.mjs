@@ -20,7 +20,7 @@ async function scan(dir) {
 await scan(root);
 try { await scan(path.join(root, '.next', 'static')); }
 catch (error) { if (error.code !== 'ENOENT') throw error; }
-for (const required of ['LICENSE', 'README.md', '.env.local.example', 'docs/SUBMISSION.md']) {
+for (const required of ['LICENSE', 'README.md', '.env.local.example', 'docs/SUBMISSION.md', 'vercel.json']) {
   try { await readFile(path.join(root, required)); } catch { failures.push(`Missing ${required}`); }
 }
 if (failures.length) { console.error('Release check failed (values hidden):\n' + failures.join('\n')); process.exitCode = 1; }

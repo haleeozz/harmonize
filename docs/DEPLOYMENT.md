@@ -3,7 +3,7 @@
 This application needs a server. Do not deploy it as a static export or to GitHub Pages.
 
 ## Before publication
-1. Run `npm ci`, `npm run verify`, and `npm run build` on Node.js 22.19.0 or newer.
+1. Run `npm ci`, `npm run verify`, and `npm run build` on Node.js 24.x.
 2. Review `docs/SUBMISSION.md` and `docs/VALIDATION.md`.
 3. Run `npm run check:release`. Confirm `.env.local` is ignored (`git check-ignore .env.local`).
 4. Confirm the Qloo key is individually issued to this project and approved for a public demo. Keys previously shared outside the private environment should be replaced through Qloo before publication. Never put a credential into the source, demo, public log, or submission text.
@@ -30,3 +30,13 @@ Use `npm ci`, `npm run build`, and `npm start`. The server honors the usual Next
 
 ## Publication boundary
 The local source package and submission text can be reviewed without uploading anything. Creating a public repository, transferring the private key to a host, and publishing the application are separate external actions. Do not claim a live demo exists until those actions and a deployed smoke test are complete.
+
+## Current published release
+
+- Application: https://harmonize-three.vercel.app
+- Public source: https://github.com/haleeozz/harmonize
+- Project: `hale1/harmonize`; Node 24.x; Next.js preset is fixed by `vercel.json`.
+- Qloo key: private Vercel Production Secret, never a `NEXT_PUBLIC_` value. A redeployment is required after changing production variables.
+- Signed-out production browser validation: all five scenarios passed on 2026-10-28.
+
+The current release was deployed through the official Vercel CLI. GitHub automatic deployment linking could not be established with the current Git-provider access. Until that is connected, deploy reviewed source updates with `vercel deploy --prod --scope hale1` from the linked clean source directory; do not assume that a GitHub push updates the application.

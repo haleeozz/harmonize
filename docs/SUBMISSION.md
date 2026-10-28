@@ -30,7 +30,7 @@ A technically successful API call is not enough. Early versions kept Qloo discov
 The repository contains a category/needs acceptance matrix, graph-change and stale-choice tests, incomplete-evidence tests, output consistency checks, shared-request cancellation checks and request-body bounds. A separate browser script exercises the production application with real Qloo data, shared-direction selection, downloads, clipboard and mobile widths. See `docs/VALIDATION.md` for actual completed runs and remaining delivery gates.
 
 ## Testing instructions for judges
-1. Open the public application; no account is needed.
+1. Open https://harmonize-three.vercel.app; no account is needed.
 2. Choose a category and add two to four specific cultural names. Optional starting mixes are available.
 3. Choose what you want to preserve from each reference and set the project needs.
 4. Review the summary and find shared directions. Confirm the intended entity if a name is ambiguous.
@@ -42,11 +42,11 @@ The app does not generate a photograph. Its schematic is an illustrative palette
 ## Limits
 Five authored creative interpretations and a small material catalog. No general free-text understanding, measured layout, guaranteed price, certified material compatibility or professional design service. Affinity scores describe cultural connections, not a probability of liking the finished result. The shared shortlist is bounded, and caching/rate limits are per process.
 
-## Delivery fields — fill only after publication
-- Functional application URL: pending publication.
+## Delivery fields
+- Functional application URL: https://harmonize-three.vercel.app
 - Public source repository URL: https://github.com/haleeozz/harmonize
 - License: MIT, included in the source.
 - Built with: Qloo API, Next.js, React, TypeScript, Tailwind CSS, Lucide.
 
 ## Verified event requirements
-Checked 2026-10-28 against https://qloo.devpost.com/ and https://qloo.devpost.com/rules. A functional demo URL, public open-source repository and English project description are required. A video is not listed as a required submission item. Deadline: October 30, 2026 at 11:45 pm EDT, which is October 31 at 06:45 in Türkiye. The submitted application must remain available for judging. The public source repository has been published. Application hosting and final Devpost submission have not been completed.
+Checked 2026-10-28 against https://qloo.devpost.com/ and https://qloo.devpost.com/rules. A functional demo URL, public open-source repository and English project description are required. A video is not listed as a required submission item. Deadline: October 30, 2026 at 11:45 pm EDT, which is October 31 at 06:45 in Türkiye. The submitted application must remain available for judging. The public source and production application have been published and tested without owner access. Final Devpost submission has not been performed.

@@ -2,6 +2,8 @@
 
 **How can the different things I love work together in one project?**
 
+[Try Harmonize](https://harmonize-three.vercel.app) · [Public source](https://github.com/haleeozz/harmonize)
+
 Harmonize combines explicit creative choices with Qloo cultural discovery. It supports living spaces, a fashion capsule, objects/decor and visual art. You choose what to keep from each reference and confirm the needs; the app does not pretend to understand free-text requirements.
 
 ## Use it
@@ -18,7 +20,7 @@ The result explains your confirmed needs, each influence's role, possible fricti
 
 ## Run locally
 
-Node.js 22.19.0 or newer, npm, and an individually issued Qloo key are required. No LLM or paid image key is used.
+Node.js 24.x, npm, and an individually issued Qloo key are required. No LLM or paid image key is used. Vercel uses the checked-in Next.js preset in `vercel.json`.
 
 ```sh
 npm ci

@@ -17,9 +17,9 @@
 
 ## Required before actual submission
 - [x] Publish the reviewed MIT-licensed source: https://github.com/haleeozz/harmonize (46 files verified against the source package).
-- [ ] Deploy the server application with the Qloo key stored privately on the host.
-- [ ] Confirm signed-out external access and run the deployed smoke test.
-- [ ] Replace pending URL fields in the submission text with the actual working URLs.
+- [x] Deploy https://harmonize-three.vercel.app with the Qloo key stored as a private production Secret.
+- [x] Confirm signed-out external access and run all five deployed browser scenarios.
+- [x] Replace pending URL fields in the submission text with the verified public URLs.
 - [ ] Review the final Devpost entry and submit it before the deadline.
 
-The public source repository is verified. No live demo or completed submission is claimed by this checklist. Deadline verified against official rules: October 30, 2026 23:45 EDT / October 31, 2026 06:45 Türkiye. Video is optional; do not let it block the required delivery.
+The public source repository and live demo are verified. The project is prepared for submission; the final Devpost entry has not been submitted. Deadline verified against official rules: October 30, 2026 23:45 EDT / October 31, 2026 06:45 Türkiye. Video is optional; do not let it block the required delivery.

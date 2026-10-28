@@ -36,7 +36,7 @@ Screenshots and three full result read-throughs support the separate product rev
 
 ## Delivery gate
 
-Local checks pass. A functional public demo URL, a public MIT-licensed source repository and an English description are required for the event. Source packaging is prepared separately. A deployed signed-out smoke test and final Devpost submission have not been completed and must not be inferred from these local results.
+Local checks pass. A functional public demo URL, a public MIT-licensed source repository and an English description are required for the event. Source packaging is prepared separately. The subsequent production run below proves deployed signed-out access. Final Devpost submission has not been performed.
 
 ## Clean source installation
 
@@ -44,4 +44,14 @@ A separate source-only directory at `WORK/harmonize-release-check` was created w
 
 ## Public source verification
 
-The user-created public repository is https://github.com/haleeozz/harmonize . Source commit `213bb01d4b74e807b2aaa4c6b23fdfe442b73565` was cloned without credentials and all 46 Git blob IDs were compared with the uploaded source snapshot. They matched. Private configuration, generated files and local Git history were excluded. Later delivery-document updates do not change application behavior. Public application hosting remains pending.
+The user-created public repository is https://github.com/haleeozz/harmonize . Source commit `213bb01d4b74e807b2aaa4c6b23fdfe442b73565` was cloned without credentials and all 46 Git blob IDs were compared with the uploaded source snapshot. They matched. Private configuration, generated files and local Git history were excluded. Later delivery-document updates do not change application behavior. Public application hosting was subsequently completed; see the production verification below.
+
+## Production verification — 2026-10-28
+
+The public application is https://harmonize-three.vercel.app on `hale1/harmonize`, Node 24.x. Source-controlled `vercel.json` sets the Next.js framework and `npm ci` / `npm run build`; an initial generic-site preset produced a 404 and was corrected before acceptance. The Qloo key is a private Production Secret and is absent from the public repository.
+
+The full five-scenario production-browser run completed at **2026-10-28T13:25:57.138Z** against the public URL. No Vercel login cookies, bypass headers or authenticated CLI proxy were used. All four categories and the spontaneous three-reference mix passed the same result, evidence, Markdown, clipboard and 320/390/768-pixel overflow assertions as locally. Report: ignored `artifacts/production/browser-validation.json`. Page errors: none. The application burst guard was observed and its Retry-After respected.
+
+At 13:26 UTC, the public HTML and 11 linked public static assets were checked locally against the actual configured Qloo key; no match was found. No key value was printed or sent as part of that comparison. Report: ignored `artifacts/production/key-exposure-check.json`.
+
+The production application is functional and public. GitHub auto-deploy linking was attempted but the Vercel account's Git-provider access was unavailable; this release was deployed directly through the authenticated CLI. Automatic Git deployment is not claimed. No Devpost form has been submitted.

@@ -25,4 +25,4 @@ The local product gate passes for this bounded scope. Public hosting, repository
 
 ## Source publication
 
-The MIT-licensed source was published at https://github.com/haleeozz/harmonize and verified through an unauthenticated clone. Public application hosting and a signed-out deployed smoke test remain required.
+The MIT-licensed source was published at https://github.com/haleeozz/harmonize and verified through an unauthenticated clone. Public application hosting and all five signed-out deployed browser scenarios subsequently passed at https://harmonize-three.vercel.app.

@@ -7,7 +7,7 @@ const { scenarios } = require('../tests/fixtures.cjs');
 const load = require('../tests/load-ts.cjs')();
 const { validateComposition } = load('src/lib/plan.ts');
 const base = process.env.TEST_BASE_URL || 'http://127.0.0.1:3000';
-const out = path.resolve('artifacts/shared-direction');
+const out = path.resolve(process.env.TEST_ARTIFACT_DIR || 'artifacts/shared-direction');
 const cases = [...scenarios, { ...scenarios[0], id: 'compact-object', mode: 'decor', notes: 'A small regularly handled object.' }, {
   id: 'spontaneous-mix', mode: 'art', references: [
     { query: 'Lana Del Rey', quality: 'sculptural', type: 'artist' },
@@ -25,7 +25,7 @@ const cases = [...scenarios, { ...scenarios[0], id: 'compact-object', mode: 'dec
     await page.getByRole('button', { name: label, exact: true }).click();
     const response = await pending;
     if (response.status() === 429) {
-      console.log('Local burst guard observed; respecting Retry-After.');
+      console.log('Application burst guard observed; respecting Retry-After.');
       const seconds = Math.min(60, Number(response.headers()['retry-after']) || 60);
       await page.waitForTimeout(seconds * 1000 + 500);
       return submit(label);
