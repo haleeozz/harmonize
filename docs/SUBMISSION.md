@@ -44,9 +44,9 @@ Five authored creative interpretations and a small material catalog. No general 
 
 ## Delivery fields — fill only after publication
 - Functional application URL: pending publication.
-- Public source repository URL: pending publication.
+- Public source repository URL: https://github.com/haleeozz/harmonize
 - License: MIT, included in the source.
 - Built with: Qloo API, Next.js, React, TypeScript, Tailwind CSS, Lucide.
 
 ## Verified event requirements
-Checked 2026-10-28 against https://qloo.devpost.com/ and https://qloo.devpost.com/rules. A functional demo URL, public open-source repository and English project description are required. A video is not listed as a required submission item. Deadline: October 30, 2026 at 11:45 pm EDT, which is October 31 at 06:45 in Türkiye. The submitted application must remain available for judging. Publication and final Devpost submission have not been performed.
+Checked 2026-10-28 against https://qloo.devpost.com/ and https://qloo.devpost.com/rules. A functional demo URL, public open-source repository and English project description are required. A video is not listed as a required submission item. Deadline: October 30, 2026 at 11:45 pm EDT, which is October 31 at 06:45 in Türkiye. The submitted application must remain available for judging. The public source repository has been published. Application hosting and final Devpost submission have not been completed.

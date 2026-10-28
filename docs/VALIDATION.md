@@ -41,3 +41,7 @@ Local checks pass. A functional public demo URL, a public MIT-licensed source re
 ## Clean source installation
 
 A separate source-only directory at `WORK/harmonize-release-check` was created without `.env.local`, `.next`, `node_modules` or prior artifacts. `npm ci` succeeded, followed by `npm run verify` (38 tests) and `npm run build`. No Qloo key was needed to install or build; the runtime requires the host's private key. This checks source reproducibility independently from the existing local installation. The clean build includes the final refresh hint for older browser clients.
+
+## Public source verification
+
+The user-created public repository is https://github.com/haleeozz/harmonize . Source commit `213bb01d4b74e807b2aaa4c6b23fdfe442b73565` was cloned without credentials and all 46 Git blob IDs were compared with the uploaded source snapshot. They matched. Private configuration, generated files and local Git history were excluded. Later delivery-document updates do not change application behavior. Public application hosting remains pending.

@@ -22,3 +22,7 @@ The final selector shows one balanced candidate per available category, with oth
 Creative interpretations are limited to five choices, and the catalog is small. Some role explanations repeat. Two different shared references can produce the same materials when the user gives them the same interpretation and needs; this is disclosed behavior, not hidden visual analysis. The graph determines which shared references are available, while user decisions determine the creative transfer. The result should be judged as a grounded starting point and a small experiment, not a bespoke final design or a professional material specification.
 
 The local product gate passes for this bounded scope. Public hosting, repository publication and deployed access remain separate delivery gates.
+
+## Source publication
+
+The MIT-licensed source was published at https://github.com/haleeozz/harmonize and verified through an unauthenticated clone. Public application hosting and a signed-out deployed smoke test remain required.
