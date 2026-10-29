@@ -13,6 +13,7 @@
     "verify": "npm run typecheck && npm run lint && npm test && npm run check:release"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "clsx": "^2.1.1",
     "lucide-react": "^1.62.0",
     "next": "16.4.3",
